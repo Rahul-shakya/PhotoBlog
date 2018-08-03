@@ -96,4 +96,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(mainIntent);
         finish();
     }
+
+
+
 }
