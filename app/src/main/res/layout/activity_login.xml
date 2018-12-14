@@ -7,26 +7,13 @@
     android:background="@color/colorPrimary"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:id="@+id/ImagePageLogo"
-        android:layout_width="133dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="120dp"
-        android:contentDescription="@string/login_pic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login_page_logo" />
-
     <EditText
-        android:id="@+id/login_email"
+        android:id="@+id/reg_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="50dp"
         android:backgroundTint="@android:color/white"
         android:ems="10"
         android:hint="@string/enter_email"
@@ -35,15 +22,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImagePageLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/login_progress"
+        android:autofillHints="" tools:targetApi="o" />
 
     <EditText
-        android:id="@+id/login_password"
+        android:id="@+id/reg_pass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
         android:backgroundTint="@android:color/white"
         android:ems="10"
         android:hint="@string/enter_password"
@@ -51,21 +39,23 @@
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_email" />
+        app:layout_constraintTop_toBottomOf="@+id/reg_email"
+        android:importantForAutofill="no" tools:targetApi="o" />
 
     <Button
         android:id="@+id/login_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
         android:backgroundTint="@color/colorAccent"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+        app:layout_constraintTop_toBottomOf="@+id/reg_pass" />
 
     <Button
         android:id="@+id/login_reg_btn"
@@ -75,7 +65,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:backgroundTint="@android:color/white"
-        android:text="Create a new account"
+        android:text="@string/create_a_new_account"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

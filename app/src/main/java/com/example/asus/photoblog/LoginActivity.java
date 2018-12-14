@@ -35,11 +35,20 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth=FirebaseAuth.getInstance();
 
-        loginEmailText=findViewById(R.id.login_email);
-        loginPassText=findViewById(R.id.login_password);
+        loginEmailText=findViewById(R.id.reg_email);
+        loginPassText=findViewById(R.id.reg_pass);
         loginBtn=findViewById(R.id.login_btn);
         loginRegBtn=findViewById(R.id.login_reg_btn);
         loginProgress=findViewById(R.id.login_progress);
+
+
+        loginRegBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent regIntent=new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(regIntent);
+            }
+        });
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override

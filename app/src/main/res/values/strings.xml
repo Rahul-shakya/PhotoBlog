@@ -7,4 +7,15 @@
     <string name="item">Item</string>
     <string name="account_settings">Account Settings</string>
     <string name="search">Search</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="name">Name</string>
+    <string name="button">Button</string>
+
+    <string name="save_settings">Save Settings</string>
+    <string name="login">LOGIN</string>
+    <string name="create_a_new_account">Create a new account</string>
+
+
 </resources>

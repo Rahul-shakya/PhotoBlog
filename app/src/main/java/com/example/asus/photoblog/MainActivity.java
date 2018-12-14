@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_logout_btn:
                 logOut();
                 return true;
+           /* case R.id.action_settings_btn:
+                Intent settingsIntent=new Intent(MainActivity.this,SetupActivity.class);
+                startActivity(settingsIntent);
+                return true;*/
 
 
             default:
