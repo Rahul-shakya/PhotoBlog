@@ -16,6 +16,8 @@
     <string name="save_settings">Save Settings</string>
     <string name="login">LOGIN</string>
     <string name="create_a_new_account">Create a new account</string>
+    <string name="your_name">Your name</string>
+    <string name="save_account_settings">Save Account Settings</string>
 
 
 </resources>
