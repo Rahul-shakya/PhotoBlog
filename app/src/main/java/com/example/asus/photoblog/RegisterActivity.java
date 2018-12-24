@@ -42,10 +42,6 @@ public class RegisterActivity extends AppCompatActivity {
 
         mAuth=FirebaseAuth.getInstance();
 
-
-
-
-
         reg_login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,8 +72,9 @@ public class RegisterActivity extends AppCompatActivity {
 
                                 if(task.isSuccessful()){
 
-                                   /* Intent setupIntent=new Intent(RegisterActivity.this,SetupActivity.class);
-                                    startActivity(setupIntent);*/
+                                    Intent setupIntent=new Intent(RegisterActivity.this,SetupActivity.class);
+                                    startActivity(setupIntent);
+                                    finish();
 
 
                                 }else{
